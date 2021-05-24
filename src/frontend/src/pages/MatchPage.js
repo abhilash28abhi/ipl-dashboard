@@ -36,7 +36,7 @@ class MatchPage extends PureComponent {
                 </div>  
                     <div>
                     <h1 className="page-heading">{this.state.teamName} matches in {this.state.year}</h1>
-                        {this.state.matches.map(match => <MatchSmallCard teamName={this.state.teamName} match={match} />)}
+                        {this.state.matches.map(match => <MatchSmallCard key={match.id} teamName={this.state.teamName} match={match} />)}
                     </div>
                 </div>
             </div>

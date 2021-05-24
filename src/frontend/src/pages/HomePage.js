@@ -25,7 +25,7 @@ class HomePage extends Component {
                     <h1 className="application-name">IPL Dashboard</h1>
                 </div>
                 <div className="team-grid">
-                    {this.state.teams.map(team => <TeamTile teamName={team.teamName}/>)}
+                    {this.state.teams.map(team => <TeamTile key={team.id} teamName={team.teamName}/>)}
                 </div>
             </div>
         );
